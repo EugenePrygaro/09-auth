@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/Loader/Loader.module.css"],"sourcesContent":[".loader {\r\n  width: 124px;\r\n  height: 24px;\r\n  -webkit-mask:\r\n    conic-gradient(from 135deg at top, #0000, #000 .5deg 90deg, #0000 90.5deg) 0 0,\r\n    conic-gradient(from -45deg at bottom, #0000, #000 .5deg 90deg, #0000 90.5deg) 0 100%;\r\n  -webkit-mask-size: 25% 50%;\r\n  -webkit-mask-repeat: repeat-x;\r\n  background: linear-gradient(#4525b0 0 0) left/0% 100% no-repeat #ddd;\r\n  animation: l13 2s infinite linear;\r\n  justify-self: center;\r\n  margin: 15px 0;\r\n}\r\n\r\n@keyframes l13 {\r\n  100% {\r\n    background-size: 100% 100%\r\n  }\r\n}"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;AAcA"}}]
-}

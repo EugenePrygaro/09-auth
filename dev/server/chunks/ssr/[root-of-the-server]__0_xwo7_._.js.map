@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/priga/Documents/myProjects/GoIT/Module_3/08-zustand/app/%40modal/default.tsx"],"sourcesContent":["export default function DefaultModal() {\r\n  return null;\r\n}\r\n"],"names":["DefaultModal"],"mappings":";;;;AAAe,SAASA;IACtB,OAAO;AACT"}}]
-}
