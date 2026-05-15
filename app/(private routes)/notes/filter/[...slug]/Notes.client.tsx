@@ -13,6 +13,7 @@ import NoteList from "@/components/NoteList/NoteList";
 import Pagination from "@/components/Pagination/Pagination";
 import Loader from "@/components/Loader/Loader";
 import SearchBox from "@/components/SearchBox/SearchBox";
+import Link from "next/link";
 
 interface NotesClientProps {
   tag: string;
@@ -53,12 +54,9 @@ export default function NoteClient({ tag }: NotesClientProps) {
             onPageChange={(page) => setCurrentPage(page + 1)}
           ></Pagination>
         )}
-        <button
-          className={css.button}
-          onClick={() => router.push("/notes/action/create")}
-        >
+        <Link className={css.button} href="/notes/action/create">
           Create note +
-        </button>
+        </Link>
       </header>
       {isLoading && <Loader />}
       {isError && <p className={css.error}>Error fetching notes</p>}
