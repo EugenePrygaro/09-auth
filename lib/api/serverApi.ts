@@ -15,7 +15,7 @@ export const fetchNotes = async (
   search: string,
   tag?: string,
 ): Promise<FetchNotesResponse> => {
-    const cookieStore = await cookies();
+    const cookieStore = cookies();
   const response = await nextServer.get<FetchNotesResponse>(`/notes`, {
     params: {
       page: currentPage,
@@ -24,7 +24,6 @@ export const fetchNotes = async (
       tag: tag,
     },
     headers: {
-        Authorization: `Bearer ${process.env.NEXT_PUBLIC_NOTEHUB_TOKEN}`,
         Cookie: cookieStore.toString(),
     },
   });
@@ -32,20 +31,18 @@ export const fetchNotes = async (
 };
 
 export const fetchNoteById = async (id: string): Promise<Note> => {
-  const cookieStore = await cookies();
+  const cookieStore = cookies();
   const response = await nextServer.get<Note>(`/notes/${id}`, {
     headers: {
-      Authorization: `Bearer ${process.env.NEXT_PUBLIC_NOTEHUB_TOKEN}`,
       Cookie: cookieStore.toString(),
     },
   });
   return response.data;
 };
 export const getMe = async (): Promise<User> => {
-  const cookieStore = await cookies();
+  const cookieStore = cookies();
   const response = await nextServer.get<User>(`/users/me`, {
     headers: {
-          Authorization: `Bearer ${process.env.NEXT_PUBLIC_NOTEHUB_TOKEN}`,
             Cookie: cookieStore.toString(),
     },
   });
@@ -53,10 +50,9 @@ export const getMe = async (): Promise<User> => {
 };
 
 export const checkSession = async () : Promise<AxiosResponse> => {
-  const cookieStore = await cookies();
+  const cookieStore = cookies();
   const response = await nextServer.get(`/auth/session`, {
     headers: {
-          Authorization: `Bearer ${process.env.NEXT_PUBLIC_NOTEHUB_TOKEN}`,
             Cookie: cookieStore.toString(),
     },
   });

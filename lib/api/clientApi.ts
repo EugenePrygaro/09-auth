@@ -24,18 +24,12 @@ export const fetchNotes = async (
       search: search,
       tag: tag,
     },
-    headers: {
-      Authorization: `Bearer ${process.env.NEXT_PUBLIC_NOTEHUB_TOKEN}`,
-    },
   });
   return response.data;
 };
 
 export const fetchNoteById = async (id: string): Promise<Note> => {
   const response = await nextServer.get<Note>(`/notes/${id}`, {
-    headers: {
-      Authorization: `Bearer ${process.env.NEXT_PUBLIC_NOTEHUB_TOKEN}`,
-    },
   });
   return response.data;
 };
@@ -46,20 +40,12 @@ export const createNote = async (
   const response = await nextServer.post<MutateNoteResponse>(
     `/notes`,
     noteData,
-    {
-      headers: {
-        Authorization: `Bearer ${process.env.NEXT_PUBLIC_NOTEHUB_TOKEN}`,
-      },
-    },
   );
   return response.data;
 };
 
 export const deleteNote = async (id: string): Promise<MutateNoteResponse> => {
   const response = await nextServer.delete<MutateNoteResponse>(`/notes/${id}`, {
-    headers: {
-      Authorization: `Bearer ${process.env.NEXT_PUBLIC_NOTEHUB_TOKEN}`,
-    },
   });
   return response.data;
 };
