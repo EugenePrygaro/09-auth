@@ -2,6 +2,7 @@ import type { Note, NewNoteData } from "@/types/note";
 import nextServer from "./api";
 import { cookies } from 'next/headers';
 import { User } from '@/types/user';
+import { AxiosResponse } from 'axios';
 
 interface FetchNotesResponse {
   notes: Note[];
@@ -40,7 +41,7 @@ export const fetchNoteById = async (id: string): Promise<Note> => {
   });
   return response.data;
 };
-export const getMe = async () => {
+export const getMe = async (): Promise<User> => {
   const cookieStore = await cookies();
   const response = await nextServer.get<User>(`/users/me`, {
     headers: {
@@ -50,7 +51,8 @@ export const getMe = async () => {
   });
   return response.data;
 };
-export const checkSession = async () => {
+
+export const checkSession = async () : Promise<AxiosResponse> => {
   const cookieStore = await cookies();
   const response = await nextServer.get(`/auth/session`, {
     headers: {
