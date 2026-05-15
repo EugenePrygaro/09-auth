@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/priga/Documents/myProjects/GoIT/Module_3/08-zustand/components/TanStackProvider/TanStackProvider.tsx"],"sourcesContent":["\"use client\";\r\n\r\nimport { useState } from \"react\";\r\nimport { QueryClient, QueryClientProvider } from \"@tanstack/react-query\";\r\n\r\ntype Props = {\r\n  children: React.ReactNode;\r\n};\r\n\r\nconst TanStackProvider = ({ children }: Props) => {\r\n  const [queryClient] = useState(() => new QueryClient());\r\n\r\n  return (\r\n    <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>\r\n  );\r\n};\r\n\r\nexport default TanStackProvider;\r\n"],"names":["TanStackProvider","children","queryClient","client"],"mappings":";;;;;AAEA;AACA;AAAA;;;AAHA;;;AASA,MAAMA,mBAAmB,CAAC,EAAEC,QAAQ,EAAS;;IAC3C,MAAM,CAACC,YAAY,GAAG,IAAA,yKAAQ;qCAAC,IAAM,IAAI,+LAAW;;IAEpD,qBACE,6LAAC,gNAAmB;QAACC,QAAQD;kBAAcD;;;;;;AAE/C;GANMD;KAAAA;uCAQSA"}}]
+}

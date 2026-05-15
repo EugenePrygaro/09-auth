@@ -1,0 +1,27 @@
+/* [project]/components/Loader/Loader.module.css [app-client] (css) */
+.Loader-module__ciLxHG__loader {
+  background: #ddd linear-gradient(#4525b0 0 0) 0 / 0% 100% no-repeat;
+  justify-self: center;
+  width: 124px;
+  height: 24px;
+  margin: 15px 0;
+  animation: 2s linear infinite Loader-module__ciLxHG__l13;
+  -webkit-mask-image: conic-gradient(from 135deg at top, #0000, #000 .5deg 90deg, #0000 90.5deg), conic-gradient(from -45deg at bottom, #0000, #000 .5deg 90deg, #0000 90.5deg);
+  -webkit-mask-position: 0 0, 0 100%;
+  -webkit-mask-size: 25% 50%;
+  -webkit-mask-repeat: repeat-x;
+  -webkit-mask-clip: border-box, border-box;
+  -webkit-mask-origin: border-box, border-box;
+  -webkit-mask-composite: source-over, source-over;
+  mask-composite: add, add;
+  -webkit-mask-source-type: auto, auto;
+  mask-mode: match-source, match-source;
+}
+
+@keyframes Loader-module__ciLxHG__l13 {
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+/*# sourceMappingURL=components_Loader_Loader_module_0yvam6s.css.map*/

@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/Loader/Loader.module.css [app-rsc] (css module)"],"sourcesContent":["__turbopack_context__.v({\n  \"l13\": \"Loader-module__ciLxHG__l13\",\n  \"loader\": \"Loader-module__ciLxHG__loader\",\n});\n"],"names":[],"mappings":"AAAA;AACA;AACA;AACA"}},
+    {"offset": {"line": 11, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/priga/Documents/myProjects/GoIT/Module_3/08-zustand/components/Loader/Loader.tsx"],"sourcesContent":["import css from './Loader.module.css';\r\n\r\nexport default function Loader() {\r\n  return <div className={css.loader}></div>;\r\n}\r\n"],"names":["Loader","className","loader"],"mappings":";;;;;AAAA;;;AAEe,SAASA;IACtB,qBAAO,8OAAC;QAAIC,WAAW,qJAAG,CAACC,MAAM;;;;;;AACnC"}},
+    {"offset": {"line": 32, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/priga/Documents/myProjects/GoIT/Module_3/08-zustand/app/loading.tsx"],"sourcesContent":["import Loader from \"../components/Loader/Loader\";\r\nconst Loading = () => {\r\n  return <Loader />;\r\n};\r\n\r\nexport default Loading;\r\n"],"names":["Loading"],"mappings":";;;;;AAAA;;;AACA,MAAMA,UAAU;IACd,qBAAO,8OAAC,0IAAM;;;;;AAChB;uCAEeA"}}]
+}

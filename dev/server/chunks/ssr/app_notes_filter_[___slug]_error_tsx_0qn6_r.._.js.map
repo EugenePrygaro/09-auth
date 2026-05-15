@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/priga/Documents/myProjects/GoIT/Module_3/08-zustand/app/notes/filter/%5B...slug%5D/error.tsx"],"sourcesContent":["\"use client\";\r\n\r\ntype Props = {\r\n  error: Error;\r\n};\r\n\r\nconst Error = ({ error }: Props) => {\r\n  return <p>Could not fetch the list of notes. {error.message}</p>;\r\n};\r\n\r\nexport default Error;\r\n"],"names":["Error","error","message"],"mappings":";;;;;AAAA;;AAMA,MAAMA,QAAQ,CAAC,EAAEC,KAAK,EAAS;IAC7B,qBAAO,8OAAC;;YAAE;YAAoCA,MAAMC,OAAO;;;;;;;AAC7D;uCAEeF"}}]
+}
